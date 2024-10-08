@@ -1,0 +1,133 @@
+body {
+    background-color: black;
+    cursor: none; 
+}
+.custom-cursor {
+    position: absolute;
+    width: 20px;  /* Diameter of the circle */
+    height: 20px;
+    background-color: orangered;
+    border-radius: 50%;
+    pointer-events: none;  /* Allow clicks through the cursor */
+    z-index: 9999;  /* Ensure it's on top of all elements */
+}
+#indexvideo {
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+}
+.index {
+    width: fit-content;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#gridimg {
+    margin-top: 10px;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+}
+h1 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 30pt;
+   font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20pt;
+   font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+#drawing {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+#indoor {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.menu {
+    margin-top: 60px;
+    display: flex;       
+    justify-content: center;
+}
+
+#guide {
+    display: inline-block;
+    width: fit-content;
+    border: solid orangered;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: orangered;
+    padding: 10px;
+    margin: 0 15px;
+}
+#guide:hover {
+    color: white;
+    border: white solid;
+    background-color: white;
+}
+.marqueetext {
+    border: solid orangered;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    color: orangered;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.marquee {
+    margin-top: 60px;
+    width: 100%;              
+    overflow: hidden;         
+    box-sizing: border-box;    
+    white-space: nowrap;       
+  }
+  
+  .marquee-content {
+    display: flex;    
+    align-items: center; 
+    animation: marquee 15s linear infinite; 
+  }
+  
+ 
+  .mvimgs {
+    width: 800px;             
+    height: 150px;            
+    margin-right: 20px;        
+    object-fit: cover;        
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(90%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  .imagecontainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    margin-top: 20px;
+  }
+  #scans {
+    width: 50%;
+  }
