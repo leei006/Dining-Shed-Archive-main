@@ -26,38 +26,37 @@ body {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
 }
+h1 {
+  width: fit-content;
+    border: solid orangered;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    font-weight: 300;
+    color: orangered;
+    padding: 15px;
+}
+#sub {
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 200;
+    color: orangered;
+    text-align: left;
+    margin-left: 30px;
+}
+#maintxt {
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 200;
+    color: orangered;
+    text-align: left;
+    margin: 30px;
+}
 #gridimg {
     margin-top: 10px;
     width: 100%;
     grid-column: 2;
     grid-row: 3;
-}
-h1 {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 30pt;
-   font-weight: 300;
-    color: white;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 20pt;
-   font-weight: 300;
-    color: white;
-    text-align: left;
-    margin-left: 30px;
-}
-#drawing {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 2;
-}
-#indoor {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 4;
 }
 
 .menu {
@@ -73,6 +72,7 @@ h2 {
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
+    font-weight: 300;
     color: orangered;
     padding: 10px;
     margin: 0 15px;
@@ -130,4 +130,19 @@ h2 {
   }
   #scans {
     width: 50%;
+  }
+  #aboutimg {
+    display: block;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #credit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: 200;
+    color: orangered;
+    text-align: left;
+    margin-left: 30px;
   }
