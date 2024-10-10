@@ -50,23 +50,28 @@ h1 {
     font-weight: 300;
     color: orangered;
     padding: 20px;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #sub {
+  width: 700px;
   font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 200;
     color: orangered;
     text-align: left;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #maintxt {
+  width: 710px;
   font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 200;
     color: orangered;
     text-align: left;
-    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #gridimg {
     margin-top: 10px;
@@ -110,7 +115,7 @@ h1 {
     font-size: 35pt;
     font-weight: 300;
     color: orangered;
-    background-color: none;
+    background-color: black;
     padding: 15px;
     display: inline-block;
     vertical-align: middle;
@@ -158,17 +163,19 @@ h1 {
   }
   #aboutimg {
     display: block;
-    width: 50%;
+    width: 700px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
   }
   #credit {
+    width: 700px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8pt;
     font-weight: 200;
     color: orangered;
     text-align: left;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
