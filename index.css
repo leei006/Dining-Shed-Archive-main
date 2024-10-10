@@ -1,23 +1,28 @@
 body {
-    background-color: black;
-    cursor: none; 
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  cursor: none;
+  overflow: hidden;
 }
 .custom-cursor {
     position: absolute;
-    width: 20px;  /* Diameter of the circle */
+    width: 20px;  
     height: 20px;
     background-color: orangered;
     border-radius: 50%;
-    pointer-events: none;  /* Allow clicks through the cursor */
-    z-index: 9999;  /* Ensure it's on top of all elements */
+    pointer-events: none;  
+    z-index: 9999; 
 }
 #indexvideo {
-    margin-top: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    
+  position: absolute;
+  top: 50%;                /* Center vertically */
+  left: 50%;               /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  width: 120%;              /* Adjust width as needed */
+  height: auto;           /* Keep aspect ratio */
+  z-index: 0;
+  background-color: black; 
 }
 .index {
     width: fit-content;
@@ -31,10 +36,10 @@ h1 {
     border: solid orangered;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40pt;
+    font-size: 35pt;
     font-weight: 300;
     color: orangered;
-    padding: 15px;
+    padding: 20px;
 }
 #sub {
   font-family: Arial, Helvetica, sans-serif;
@@ -60,9 +65,13 @@ h1 {
 }
 
 .menu {
-    margin-top: 60px;
-    display: flex;       
-    justify-content: center;
+  position: absolute;
+  bottom: 10%; 
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
 #guide {
@@ -74,6 +83,7 @@ h1 {
     font-size: 15pt;
     font-weight: 300;
     color: orangered;
+    background-color: black;
     padding: 10px;
     margin: 0 15px;
 }
@@ -83,21 +93,25 @@ h1 {
     background-color: white;
 }
 .marqueetext {
-    border: solid orangered;
+    border: 2.5px solid orangered;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40pt;
+    font-size: 35pt;
+    font-weight: 300;
     color: orangered;
-    padding: 10px;
+    background-color: none;
+    padding: 15px;
     display: inline-block;
     vertical-align: middle;
 }
 .marquee {
-    margin-top: 60px;
-    width: 100%;              
-    overflow: hidden;         
-    box-sizing: border-box;    
-    white-space: nowrap;       
+  position: relative;
+  width: 100%;  
+  z-index: 3;
+  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap;
+  margin-top: 20px;      
   }
   
   .marquee-content {
@@ -116,10 +130,10 @@ h1 {
   
   @keyframes marquee {
     0% {
-      transform: translateX(90%); 
+      transform: translateX(100%);
     }
     100% {
-      transform: translateX(-100%); 
+      transform: translateX(-100%);
     }
   }
   .imagecontainer {
